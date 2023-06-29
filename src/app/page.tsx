@@ -1,7 +1,12 @@
-export default function Home() {
+import Form from "@/components/form";
+
+const Home = () => {
   return (
-    <main className="h-full">
-      <div>테스트 중</div>
+    <main className="flex justify-between gap-5">
+      <Form />
+      <div className=" flex-1">list 칸</div>
     </main>
   );
-}
+};
+
+export default Home;
