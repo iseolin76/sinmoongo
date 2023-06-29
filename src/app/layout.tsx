@@ -1,3 +1,4 @@
+import Providers from "@/utils/provider";
 import "./globals.css";
 import Header from "./header";
 
@@ -14,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="min-h-screen">
-        <Header />
-        <div className="mx-80 min-h-full mt-20">{children}</div>
+        <Providers>
+          <Header />
+          <div className="min-h-full mx-80 pt-20">{children}</div>
+        </Providers>
       </body>
     </html>
   );
