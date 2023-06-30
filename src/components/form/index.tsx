@@ -3,6 +3,7 @@
 import { createArticle } from "@/app/action";
 import { useMutation } from "@tanstack/react-query";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Button from "../common/button";
 import Input from "../common/input";
 import Textarea from "../common/textarea";
 
@@ -81,12 +82,9 @@ const Form = () => {
           })}
           className="h-44 p-4 pb-16 border rounded-lg text-sm outline-yellow-400 resize-none hover:border-yellow-300 placeholder:text-sm"
         />
-        <button
-          disabled={!(errors.content || errors.password || errors.title)}
-          className=" w-full px-4 py-3 rounded-lg text-sm bg-yellow-300 disabled:bg-gray-300 disabled:text-white"
-        >
+        <Button disabled={!(errors.content || errors.password || errors.title)}>
           전송하기
-        </button>
+        </Button>
       </div>
     </form>
   );
