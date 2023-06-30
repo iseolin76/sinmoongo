@@ -13,8 +13,6 @@ const Articles = () => {
   if (isError) return <>error</>;
   if (isLoading) return <>loading</>;
 
-  console.log(data.data);
-
   return (
     <div className="flex-1">
       <ul className="grid gap-4 grid-cols-1">
