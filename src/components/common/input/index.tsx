@@ -37,7 +37,7 @@ const Input = ({ helperText, ...defaultProps }: InputProps) => {
       <input
         onFocus={onFocus}
         onChange={onChange}
-        className="px-4 py-2 border rounded-lg text-sm outline-yellow-400 hover:border-yellow-300 placeholder:text-sm"
+        className="px-4 py-3 border rounded-lg text-sm outline-yellow-400 hover:border-yellow-300 placeholder:text-sm"
         {...defaultProps}
       />
       {helperText && isShowHelperText && (
