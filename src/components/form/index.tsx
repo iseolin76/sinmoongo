@@ -23,7 +23,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={onSubmit} className=" sticky top-28 grid gap-4 w-80">
+    <form onSubmit={onSubmit} className="sticky top-28 grid gap-4 w-96">
       <div className="grid gap-1">
         <h1 className="font-bold text-2xl text-yellow-400">
           무슨 일이 있었나요?
