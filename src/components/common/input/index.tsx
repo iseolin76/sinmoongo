@@ -5,7 +5,6 @@ import {
   InputHTMLAttributes,
   useState,
 } from "react";
-
 interface InputProps
   extends DetailedHTMLProps<
     InputHTMLAttributes<HTMLInputElement>,
@@ -35,8 +34,8 @@ const Input = ({ helperText, ...defaultProps }: InputProps) => {
   return (
     <div className="grid gap-1 ">
       <input
-        onFocus={onFocus}
-        onChange={onChange}
+        // onFocus={onFocus}
+        // onChange={onChange}
         className="px-4 py-3 border rounded-lg text-sm outline-yellow-400 hover:border-yellow-300 placeholder:text-sm"
         {...defaultProps}
       />

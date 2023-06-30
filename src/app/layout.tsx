@@ -23,7 +23,9 @@ export default function RootLayout({
       <body className="min-h-screen">
         <Providers>
           <Header />
-          <div className="min-h-full mx-80 pt-28">{children}</div>
+          <div className="min-h-full px-5 pt-28 xl:px-80 lg:px-48">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

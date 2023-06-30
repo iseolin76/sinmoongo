@@ -21,6 +21,8 @@ TODO: darkmode 추가
 * {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   box-sizing: border-box;
+  line-height: 1.5rem;
+  letter-spacing: -0.0625rem;
 }
 
 html {

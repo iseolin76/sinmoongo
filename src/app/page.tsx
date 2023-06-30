@@ -10,7 +10,7 @@ const Home = async () => {
   await queryClient.prefetchQuery(["hydrate-articles"], getArticles);
   const dehydratedState = dehydrate(queryClient);
   return (
-    <main className="flex justify-between gap-8 items-start">
+    <main className="flex justify-between gap-8 items-start flex-col sm:flex-row">
       <Form />
       <Hydrate state={dehydratedState}>
         <ArticleList />

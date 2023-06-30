@@ -14,7 +14,7 @@ const ArticleList = () => {
   if (isLoading) return <>loading</>;
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 w-full sm:w-auto">
       <ul className="grid gap-4 grid-cols-1">
         {data.data.map((article) => (
           <ArticleItem key={article.id} {...article} />
