@@ -1,4 +1,4 @@
-import Articles from "@/components/articles";
+import ArticleList from "@/components/articles/articleList";
 import Form from "@/components/form";
 import getArticles from "@/utils/api/getArticles";
 import getQueryClient from "@/utils/getQueryClient";
@@ -13,7 +13,7 @@ const Home = async () => {
     <main className="flex justify-between gap-8 items-start">
       <Form />
       <Hydrate state={dehydratedState}>
-        <Articles />
+        <ArticleList />
       </Hydrate>
     </main>
   );

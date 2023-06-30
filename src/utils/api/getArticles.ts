@@ -9,7 +9,7 @@ interface Comment {
   content: string;
 }
 
-interface Article {
+export interface Article {
   id: number;
   title: string;
   content: string;
