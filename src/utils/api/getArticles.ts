@@ -21,7 +21,9 @@ type GetArticleListResponse = Response<Article[]>;
 
 const getArticles = async (): Promise<GetArticleListResponse> => {
   const boardId = 1;
-  const res = await fetch(`http://3.35.177.101:8080/articles/list/${boardId}`);
+  const res = await fetch(
+    `${process.env.SERVER_BASE_URL}/articles/list/${boardId}`
+  );
   return res.json();
 };
 
